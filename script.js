@@ -28,7 +28,7 @@ async function getData(cityName) {
         }
     }
     else {
-        alert("Lawde city to bhar.......chutiya sala")
+        alert("City name is required")
     }
 }
 
