@@ -28,7 +28,7 @@ async function getData(cityName) {
         }
     }
     else {
-        alert("City name is required")
+        alert("City name is required");
     }
 }
 
