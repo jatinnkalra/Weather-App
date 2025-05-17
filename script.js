@@ -7,7 +7,7 @@ async function getData(cityName) {
         let actualData = await data.json()
         console.log(actualData);
         if (actualData.cod !== 200) {
-            alert("Enter Correct Country")
+            alert("Please enter a valid city name");
         }
         else {
             let img = actualData.weather[0].main;
@@ -23,7 +23,7 @@ async function getData(cityName) {
             winds.textContent = "Wind Speed :" + speed + "km/h";
             let city = document.querySelector(".locationcontainer");
             city.textContent = cityName;
-            let imgh = document.querySelector("img");
+            let imgh = document.querySelector(".imgcontainer img");
             imgh.src = img.toLowerCase() + ".png";
         }
     }
