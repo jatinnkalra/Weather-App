@@ -24,7 +24,7 @@ async function getData(cityName) {
             let city = document.querySelector(".locationcontainer");
             city.textContent = cityName;
             let imgh = document.querySelector("img");
-            imgh.src = img.tolowercase() + ".png";
+            imgh.src = img.toLowerCase() + ".png";
         }
     }
     else {
